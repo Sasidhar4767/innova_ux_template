@@ -1,0 +1,111 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+img {max-width: 100%;}
+
+body {
+    font-family: sans-serif;
+    max-width: 1600px;
+    font-size: 14px;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
+}
+
+#header {
+    background: url(/Image/work_1.jpg) no-repeat center/cover ;
+    min-height: 400px;
+
+    padding: 30px 30px;
+    background-color: rgba(161, 160, 157, 0.7);
+    color: rgba(161, 160, 157, 0.5);
+    background-color: lightblue;
+    
+}
+
+
+#headerSection { display: flex; justify-content: space-between; flex-wrap: wrap; color: rgb(255 255 255); } 
+#headerSection ul { display: flex; flex-wrap: wrap; gap: 30px; }
+#mobileMenu img { height: 30px; display: none; cursor: pointer;} 
+#clickEvent{ background-color: black; color: #fff; padding: 20px;}
+#banner { display: flex; justify-content: center; align-items: center; font-size: 80px; text-align: center; min-height: 400px; }
+#banner h1 { color: rgb(255 255 255); max-width: 90%; font-weight: bold; }
+#clickEvent { display: none; }
+.show { display: block; }
+
+
+
+#cards{display: flex; flex-wrap: wrap; padding: 90px; gap: 30px; text-align: center; background-color: rgb(255 255 255);}
+.cardsCon{width: calc(25% - 3*30px/4)}
+.cardsCon i{color: rgb(123 86 199); font-size: 40px;  padding: 10px;}
+.cardsCon h3{font-size: 25px; padding: 10px;font-weight: bold;}
+.cardsCon p{font-size: 20px; color: rgb(118 126 137); padding: 15px;  line-height: 25px;}
+
+#SelectedWork{padding: 90px; text-align: center; }
+#SelectedWork h2{font-size: 50px; font-weight: bold; padding: 50px 0;}
+#SelectedWork p{font-size: 30px; padding: 10px 0 40px; color: rgb(118 126 137) ;     line-height: 32px;}
+#SelectedWorkImages{display: flex; flex-wrap: wrap; gap: 30px;}
+#SelectedWorkImages img{width: calc(50% - 1*30px/2);}
+
+#HappyClientMain{  padding: 90px; background-color: hsl(210deg 16.67% 97.65%); }
+#HappyClientMain h2{ text-align: center; font-size: 50px; font-weight: bold; padding: 50px 0; }
+#HappyClient{display: flex; gap: 30px; flex-wrap: wrap;}
+.HappyClientTextAndImg{width: calc(50% - 1*30px/2);}
+.happyClientimgText{display: flex; align-items: center; }
+.happyClientimgText img{height: 70px; border-radius: 50%;}
+.HappyClientText h4{font-size: 20px; padding: 10px; font-weight: bold;}
+.HappyClientText p{font-size: 15px; padding: 10px; font-weight: bold; color: hsl(180deg 1.15% 82.94%);     line-height: 21px;}
+.HappyClientTextAndImg p{ color:hsl(207.69deg 6.74% 62.16%) ; font-size: 20px;     line-height: 25px;}
+
+
+#aboutUs{ display: flex;  padding: 90px; gap: 30px; }
+.aboutUs{width: calc(50% - 1*30px/2);}
+
+#aboutUsimgAndText h5{ font-size: 15px; padding: 5px 0 0; color: hsl(261.27deg 55% 60.78%);}
+#aboutUsimgAndText h3{font-size: 35px; font-weight: bold; padding: 10px 0;}
+#aboutUsimgAndText p{font-size: 20px; padding: 10px 0 ;  color: hsl(229.09deg 5.82% 62.94%);     line-height: 23px;}
+#aboutUsimgAndText a{text-decoration: none; border: 1px solid; padding: 10px; display: inline-block; color: #000;}
+
+#getStarted{ text-align: center; color: hsl(0deg 0% 100%); background-color: hsl(261.26deg 50.6% 50.78%); padding: 90px;}
+#getStarted h4{font-size: 30px; font-weight: bold; padding: 20px 0;}
+#getStarted p{ font-size: 20px; padding: 10px 0;}
+#getStarted a{text-decoration: none; border: 1px solid hsl(0deg 0% 100%); padding: 10px; display: inline-block; color: hsl(0deg 0% 100%); margin: 10px; }
+
+footer{display: flex;  padding: 90px; gap: 50px; justify-content: space-between;}
+#footerAboutUs{width: 40%;}
+#footerAboutUs h4{ font-size: 25px; padding: 10px 0;}
+#footerAboutUs p{ font-size: 20px; padding: 10px 0; color: hsl(0, 0%, 37%);}
+#footerNavigation h4{ font-size: 25px; padding: 10px 0;}
+#footerNavigation li{ font-size: 20px; padding: 10px 0; color: hsl(0deg 0.84% 24.76%);}
+
+@media only screen and (max-width: 991px) {
+
+    #banner {
+        font-size: 60px;
+    }
+    #cards{ padding: 70px;}
+    .cardsCon{width: calc(50% - 1*30px/2)}
+    .HappyClientTextAndImg{width: 100%;}
+    #aboutUs{ flex-direction: column; }
+    .aboutUs{width: 100%;}
+}
+
+@media only screen and (max-width: 767px) {
+    #mobileMenu img {display: block;}
+    #headerSection li {display: none;}
+    #banner {  font-size: 40px;}
+    #cards,  #SelectedWork ,#HappyClientMain,#aboutUs,#getStarted,footer  { padding: 50px;}
+    .cardsCon{width: 100%}
+    #SelectedWorkImages img{width: 100%;}
+     #clickEvent.show {
+        display: block;
+    }
+   
+}
+@media only screen and (max-width: 500px) {
+    #cards,  #SelectedWork, #HappyClientMain,#aboutUs ,#getStarted,footer { padding: 30px;}
+    #SelectedWork h2{font-size: 35px; }
+    #SelectedWork p{font-size:20px}
+    footer{flex-direction: column;}
+    #footerAboutUs{width: 100%;}
+}
