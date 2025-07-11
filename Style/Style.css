@@ -13,7 +13,7 @@ body {
 }
 
 #header {
-    background: url(Image/work_1.jpg) no-repeat center/cover ;
+    background: url() no-repeat center/cover ;
     min-height: 400px;
 
     padding: 30px 30px;
@@ -29,7 +29,7 @@ body {
 #mobileMenu img { height: 30px; display: none; cursor: pointer;} 
 #clickEvent{ background-color: black; color: #fff; padding: 20px;}
 #banner { display: flex; justify-content: center; align-items: center; font-size: 80px; text-align: center; min-height: 400px; }
-#banner h1 { color: rgb(255 255 255); max-width: 90%; font-weight: bold; }
+#banner h1 { color: rgb(255 255 255); max-width: 95%; font-weight: bold; font-size: 45px;}
 #clickEvent { display: none; }
 .show { display: block; }
 
