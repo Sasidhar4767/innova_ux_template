@@ -13,7 +13,7 @@ body {
 }
 
 #header {
-    background: url(/Image/work_1.jpg) no-repeat center/cover ;
+    background: url(Image/work_1.jpg) no-repeat center/cover ;
     min-height: 400px;
 
     padding: 30px 30px;
